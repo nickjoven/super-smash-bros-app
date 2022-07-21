@@ -9,14 +9,14 @@ function App() {
   // goal is to have array of objects
   const fighters = [
     {name: 'Roy', color: 'blue'},
-    { name: 'Chrom', color: 'white'},
-    { name: 'Lucina', color: 'lightskyblue'},
+    {name: 'Chrom', color: 'white'},
+    {name: 'Lucina', color: 'lightskyblue'},
     {name: 'Marth', color: 'dodgerblue'},
     {name: 'Byleth', color: 'gray'},
     {name: 'Ike', color: 'brown'},
     {name: 'Corrin', color: 'gold'},
     {name: 'Sheik', color: 'coral'},
-    { name: 'Zelda', color: 'pink'},
+    {name: 'Zelda', color: 'pink'},
     {name: 'Sephiroth', color: 'black'},
     {name: 'Cloud', color: 'midnightblue'},
     {name: 'Sora', color: 'firebrick'},
@@ -38,7 +38,8 @@ function App() {
       </div>
     {
       selectedFighter
-      ? <FighterScreen />
+      ? <FighterScreen selectedFighter={selectedFighter}
+      />
       : null
     }
     </div>
